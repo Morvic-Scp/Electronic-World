@@ -22,7 +22,7 @@
    
 </div>
 <div class="row justify-content-center" style="position: relative;top: -175px;">
-    <div class="col-11 row justify-content-center">
+    <div class="col-12 row justify-content-center">
         <div class="card-sale col-lg-3 col-3 col-sm-8">
            <a routerLink="" class="d-flex justify-content-center wise3men">
             <div class="col-7" style="overflow: hidden;">
@@ -34,7 +34,7 @@
             </div>
            </a>
         </div>
-        <div class="card-sale col-lg-3 col-3 col-sm-8" style="overflow: hidden;">
+        <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;">
            <a routerLink="" class="d-flex justify-content-center wise3men">
             <div class="col-7" style="overflow: hidden;">
                 <img src="../../../assets/globe.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
@@ -45,7 +45,7 @@
             </div>
            </a>
         </div>
-        <div class="card-sale col-lg-3 col-3 col-sm-8" style="overflow: hidden;">
+        <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;">
            <a routerLink="" class="d-flex justify-content-center wise3men">
             <div class="col-7" style="overflow: hidden;">
                 <img src="../../../assets/perpherials.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
@@ -64,7 +64,7 @@
                 <div class="row" style="overflow-x: hidden;">
                     <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
                         <a routerLink="" class="wise3men">
-                            <div class="text-left"><small>{{sell.category}}</small></div>
+                            <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
                          <div class="col-12" style="overflow: hidden;">
                              <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
                          </div>
@@ -80,8 +80,26 @@
                      </div>
                 </div>
             </mat-tab>
-            <mat-tab label="New Arrivals"> Content 1 </mat-tab>
-            <mat-tab label="Third"> Content 3 </mat-tab>
+            <mat-tab label="New Arrivals">
+                <div class="row" style="overflow-x: hidden;">
+                    <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
+                        <a routerLink="" class="wise3men">
+                            <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
+                         <div class="col-12" style="overflow: hidden;">
+                             <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
+                         </div>
+                         <div class="col-12 text-center">
+                             <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
+                             <p>{{sell.description}}</p>
+                             <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
+                         </div>
+                         <div class="col-12 text-center">
+                            <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
+                         </div>
+                        </a>
+                     </div>
+                </div>
+            </mat-tab>
           </mat-tab-group>
     </div>
 </div>
