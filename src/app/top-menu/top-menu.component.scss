@@ -1,0 +1,33 @@
+.stickTop{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 1px;
+    z-index: 55;
+    margin-bottom: 30px;
+}
+#searchbar{
+    outline: none;
+    width: 80%;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    // box-shadow: 2px 3px 9px #efefefef;
+    font-size: 18px;
+}
+.btn-round{
+    outline: none;
+    padding: 10px 42px;
+    border: none;
+    background: #ff5722;
+    border-radius: 34px;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
