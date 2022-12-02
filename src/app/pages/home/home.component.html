@@ -1,105 +1,123 @@
-<div class="row" style="position: relative;top: -115px; z-index: 0;">
-    <carousel [cellWidth]="'100%'" [dots]="true" [height]="600" [arrowsOutside]="false" [loop]="true" [autoplay]="true" [autoplayInterval]="10000" [cellsToShow]="1" [cellsToScroll]="2" [transitionDuration]="800" [transitionTimingFunction]="'ease-in-out'">
-        <div class="carousel-cell">
-            <div class="bgheader"></div>
-            <div class="overlay d-flex align-items-center">
-                <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+<div class="container-fluid">
+    <div class="row" style="position: relative;top: -115px; z-index: 0;">
+        <carousel [cellWidth]="'100%'" [dots]="true" [height]="600" [arrowsOutside]="false" [loop]="true" [autoplay]="true" [autoplayInterval]="10000" [cellsToShow]="1" [cellsToScroll]="2" [transitionDuration]="800" [transitionTimingFunction]="'ease-in-out'">
+            <div class="carousel-cell">
+                <div class="bgheader"></div>
+                <div class="overlay d-flex align-items-center">
+                    <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+                </div>
             </div>
-        </div>
-        <div class="carousel-cell">
-            <div class="bgheader2"></div>
-            <div class="overlay d-flex align-items-center">
-                <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+            <div class="carousel-cell">
+                <div class="bgheader2"></div>
+                <div class="overlay d-flex align-items-center">
+                    <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+                </div>
             </div>
-        </div>
-        <div class="carousel-cell">
-            <div class="bgheader3"></div>
-            <div class="overlay d-flex align-items-center">
-                <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+            <div class="carousel-cell">
+                <div class="bgheader3"></div>
+                <div class="overlay d-flex align-items-center">
+                    <h1 style="color: white;font-size: 3rem;text-align: initial;font-weight: 600;">Get Your <span style="color: #ff5722;">Appliance Tools</span><br><br> Here</h1>
+                </div>
             </div>
-        </div>
-    </carousel>
-   
-</div>
-<div class="row justify-content-center" style="position: relative;top: -175px;">
-    <div class="col-12 row justify-content-center">
-        <div class="card-sale col-lg-3 col-3 col-sm-8">
-           <a routerLink="" class="d-flex justify-content-center wise3men">
-            <div class="col-7" style="overflow: hidden;">
-                <img src="../../../assets/wirelessRouter.jpg" style="height: 180px;width: 180px;object-fit: contain;" alt="">
-            </div>
-            <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
-                <p style="font-size: 18px;text-align: right;"> <span style="font-weight: bold;color:var(--primary)">ATTRACTIVE DEALS</span> ON QUALITY WIRELESS DEVICES</p>
-                <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
-            </div>
-           </a>
-        </div>
-        <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;">
-           <a routerLink="" class="d-flex justify-content-center wise3men">
-            <div class="col-7" style="overflow: hidden;">
-                <img src="../../../assets/globe.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
-            </div>
-            <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
-                <p style="font-size: 18px;text-align: right;"> SHOP FOR THE <br><span style="font-weight: bold;color:var(--primary)">HOTTEST</span><br> NETWORKING PRODUCTS</p>
-                <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
-            </div>
-           </a>
-        </div>
-        <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;">
-           <a routerLink="" class="d-flex justify-content-center wise3men">
-            <div class="col-7" style="overflow: hidden;">
-                <img src="../../../assets/perpherials.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
-            </div>
-            <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
-                <p style="font-size: 18px;text-align: right;"> <span style="font-weight: bold;color:var(--primary)">ATTRACTIVE DEALS</span> ON QUALITY WIRELESS DEVICES</p>
-                <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
-            </div>
-           </a>
-        </div>
-    </div>
+        </carousel>
        
-    <div class="col-8 row justify-content-center" style="margin-top: 50px;">
-        <mat-tab-group>
-            <mat-tab label="Best Sellers" > 
-                <div class="row" style="overflow-x: hidden;">
-                    <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
-                        <a routerLink="" class="wise3men">
-                            <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
-                         <div class="col-12" style="overflow: hidden;">
-                             <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
-                         </div>
-                         <div class="col-12 text-center">
-                             <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
-                             <p>{{sell.description}}</p>
-                             <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
-                         </div>
-                         <div class="col-12 text-center">
-                            <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
-                         </div>
-                        </a>
-                     </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center" style="position: relative;top: -175px;">
+        <div class="col-12 row justify-content-center">
+            <div class="card-sale col-lg-3 col-md-3 col-sm-8">
+               <a routerLink="" class="d-flex justify-content-center wise3men">
+                <div class="col-7" style="overflow: hidden;">
+                    <img src="../../../assets/wirelessRouter.jpg" style="height: 180px;width: 180px;object-fit: contain;" alt="">
                 </div>
-            </mat-tab>
-            <mat-tab label="New Arrivals">
-                <div class="row" style="overflow-x: hidden;">
-                    <div class="card-sale col-lg-4 col-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
-                        <a routerLink="" class="wise3men">
-                            <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
-                         <div class="col-12" style="overflow: hidden;">
-                             <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
-                         </div>
-                         <div class="col-12 text-center">
-                             <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
-                             <p>{{sell.description}}</p>
-                             <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
-                         </div>
-                         <div class="col-12 text-center">
-                            <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
-                         </div>
-                        </a>
-                     </div>
+                <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
+                    <p style="font-size: 18px;text-align: right;"> <span style="font-weight: bold;color:var(--primary)">ATTRACTIVE DEALS</span> ON QUALITY WIRELESS DEVICES</p>
+                    <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
                 </div>
-            </mat-tab>
-          </mat-tab-group>
+               </a>
+            </div>
+            <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;">
+               <a routerLink="" class="d-flex justify-content-center wise3men">
+                <div class="col-7" style="overflow: hidden;">
+                    <img src="../../../assets/globe.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
+                    <p style="font-size: 18px;text-align: right;"> SHOP FOR THE <br><span style="font-weight: bold;color:var(--primary)">HOTTEST</span><br> NETWORKING PRODUCTS</p>
+                    <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
+                </div>
+               </a>
+            </div>
+            <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;">
+               <a routerLink="" class="d-flex justify-content-center wise3men">
+                <div class="col-7" style="overflow: hidden;">
+                    <img src="../../../assets/perpherials.png" style="height: 180px;width: 180px;object-fit: contain;" alt="">
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-center" style="flex-direction: column;">
+                    <p style="font-size: 18px;text-align: right;"> <span style="font-weight: bold;color:var(--primary)">ATTRACTIVE DEALS</span> ON QUALITY WIRELESS DEVICES</p>
+                    <p style="margin-top: 10px;margin-left: 20%;"><strong>Shop now</strong>&nbsp;<i style="color: var(--primary);" class="fa-solid fa-circle-chevron-right"></i></p>
+                </div>
+               </a>
+            </div>
+        </div>
+           
+        <div class="row justify-content-center">
+            <!-- Menu on the right -->
+            <div class="menuBod col-lg-3" style="margin-top: 100px;height: fit-content;padding: 55px 0%;box-shadow: 2px 3px 9px #efefefef;text-align: left;">
+                <div class="menuitem"  *ngFor="let menu of menuList">
+                    <a [routerLink]="menu.routePath" class="wise3men"><p style="margin: 0;"><i [ngClass]="menu.icon" style="font-size: 18px;"></i> &nbsp;{{menu.name}}</p></a>
+                </div>
+            </div>
+            <!-- Items on the left -->
+            <div class="col-9" style="margin-top: 50px;">
+                <mat-tab-group>
+                    <mat-tab label="Best Sellers"> 
+                        <div class="container-fluid">
+                            <div class="row" style="overflow-x: hidden;">
+                                <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
+                                    <a routerLink="" class="wise3men">
+                                        <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
+                                     <div class="col-12" style="overflow: hidden;">
+                                         <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
+                                     </div>
+                                     <div class="col-12 text-center">
+                                         <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
+                                         <p>{{sell.description}}</p>
+                                         <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
+                                     </div>
+                                     <div class="col-12 text-center">
+                                        <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
+                                     </div>
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="New Arrivals">
+                       <div class="container-fluid">
+                        <div class="row" style="overflow-x: hidden;">
+                            <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
+                                <a routerLink="" class="wise3men">
+                                    <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
+                                 <div class="col-12" style="overflow: hidden;">
+                                     <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
+                                 </div>
+                                 <div class="col-12 text-center">
+                                     <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
+                                     <p>{{sell.description}}</p>
+                                     <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
+                                 </div>
+                                 <div class="col-12 text-center">
+                                    <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
+                                 </div>
+                                </a>
+                             </div>
+                        </div>
+                       </div>
+                    </mat-tab>
+                  </mat-tab-group>
+            </div>
+        </div>
+        
     </div>
 </div>
