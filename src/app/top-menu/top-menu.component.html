@@ -12,6 +12,19 @@
           </summary>
           <ul>
             <div class="col-12">
+                <div class="">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Username</mat-label>
+                        <input matInput  type="email">
+                        <mat-icon matSuffix style="color: var(--primary);">person</mat-icon>
+                      </mat-form-field>
+
+                      <mat-form-field appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput [type]="!toggle?'password':'text'">
+                       <button (click)="toggle=!toggle" style="outline: none;border: none;background-color: none;" matSuffix> <mat-icon  style="color: var(--primary);">{{!toggle?'visibility':'visibility_off'}}</mat-icon></button>
+                      </mat-form-field>
+                </div>
                 <h2 style="font-weight: 500;text-align: center;margin: 0;">OR</h2>
                 <div class="text-center">
                     <button class="primBtn" style="width: 230px;font-weight: 500;font-size: 15px;"><i class="fab fa-facebook-f"></i>&nbsp; Login With Facebook</button>
