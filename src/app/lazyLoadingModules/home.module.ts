@@ -12,6 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule} from '@angular/forms'
 import { MatTabsModule} from '@angular/material/tabs'
+import {TopMenuComponent}  from '../top-menu/top-menu.component'
 
 
 const route: Routes = [
@@ -35,6 +36,6 @@ const route: Routes = [
     IvyCarouselModule,
     RouterModule.forChild(route)
     ],
-    declarations: [HomeComponent]
+    declarations: [TopMenuComponent,HomeComponent]
   })
   export class HomeComponentModule { }
