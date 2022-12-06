@@ -1,0 +1,16 @@
+.ratings{
+    clip-path: polygon(0% 0%, 99% 0%, 85% 51%, 100% 99%, 0 100%, 16% 49%);
+    -webkit-clip-path: polygon(0% 0%, 99% 0%, 85% 51%, 100% 99%, 0 100%, 16% 49%);
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 20px;
+}
+
+.plusMinus{
+    margin-bottom: 1.34375em;
+    outline: none; 
+    border: 2px solid var(--primary);
+    padding: 5px 15px;
+    background-color: white;
+    color: var(--primary);
+}

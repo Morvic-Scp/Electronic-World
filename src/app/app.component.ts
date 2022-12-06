@@ -11,7 +11,7 @@ import { fader } from "./route-Animations"
   animations:[fader]
 })
 export class AppComponent {
-  title = 'FarmingTools';
+  title = 'Electronic World';
 
   prepareRoute(outlet:RouterOutlet){
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']

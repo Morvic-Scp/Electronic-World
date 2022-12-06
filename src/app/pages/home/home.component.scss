@@ -1,5 +1,9 @@
-// @import url('../../../styles.scss');
+// @import  "../../../../node_modules/@angular/material/prebuilt-themes/purple-green.css";
+// @import  '../../../../ node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+:root{
+    --menuTestColor:white !important;
+}
 .bgheader{
     background: url(../../../assets/banner/banner1.jpg);
     width: 100%;
@@ -44,7 +48,16 @@
 .topLable a{
     color: unset;
 }
+.menuitem{
+    padding: 0 10px;
+}
+.menuitem:hover{
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500px;
+    transition: .3s ease-in-out;
 
+}
 .wise3men{
     text-decoration: none;
     color: unset;

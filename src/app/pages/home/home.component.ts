@@ -94,5 +94,11 @@ export class HomeComponent implements OnInit {
   }]
   
 
- 
+ menuList=[{name:"MIKROTIK SWITCHES AND ROUTERS",routePath:'/switches-and-routers',icon:'fas fa-server'},
+ {name:"UBIQUITI ACCESS POINT PRODUCTS",routePath:'/access-point-products',icon:'fab fa-hive'}, 
+ {name:"4G ROUTERS N WIRELESS EXTENDERS",routePath:'/wireless-extenders',icon:'fas fa-wifi'},
+ {name:"NETWORKING CABLES CAT6",routePath:'/networking-cables',icon:'fa-solid fa-network-wired'},
+ {name:"COMPUTER NETWORKING ACCESSORIES",routePath:'/networking-accessories',icon:'fas fa-server'},
+ {name:"LANDLINE HOME IP PHONES",routePath:'/home-ip-phones',icon:'fas fa-phone-alt'},
+ {name:"SURVEILLANCE CCTV CAMERAS",routePath:'cctv-cameras',icon:'fas fa-shield-alt'}]
 }
