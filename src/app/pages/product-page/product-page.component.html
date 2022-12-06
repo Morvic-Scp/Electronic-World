@@ -1,1 +1,53 @@
-<p>product-page works!</p>
+<app-top-menu-second></app-top-menu-second>
+<div class="row" style="padding: 30px 0;background-color:#eef2f4;">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <lib-ngx-image-zoom
+        [thumbImage]=myThumbnail
+        [fullImage]=myFullresImage
+        [magnification]="2"
+        [enableScrollZoom]="false"
+        [enableLens]="true"
+        [lensWidth]="300" 
+        [lensHeight]="300"> 
+           
+        </lib-ngx-image-zoom>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" style="padding: 3% 2%;border: 2px solid var(--primary);border-radius: 15px;overflow-y: scroll;background-color: white;">
+        <h3 style="text-align: left;">{{selectedItem[0].category}}</h3>
+        <h1 style="text-align: left;">{{selectedItem[0].productName}}</h1>
+        <p style="text-align: left;">{{selectedItem[0].description}}</p>
+        <h1 style="text-align: left;font-size: 45px;margin: 25px 5px;">{{selectedItem[0].price | number:'.2'}}</h1>
+       
+        <div class="d-flex" style="margin: 6% 0;">
+            <button class="plusMinus"><i class="fa fa-minus"></i></button>
+            <mat-form-field appearance="fill" style="text-align: center;">
+                <mat-label>Quantity</mat-label>
+                <input matInput type="text" placeholder="Quantity" style="text-align: center;">
+              </mat-form-field>
+              <button class="plusMinus"><i class="fa fa-plus"></i></button>
+        </div>
+
+
+        <div class="col-12 text-left">
+            <hr>
+            <div class="d-flex align-items-center">
+                <label class="ratings">Ratings</label>
+                <label style="margin-left: 30px;color: var(--primary);"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </label>
+            </div>
+        </div>
+        
+        <div class="lowerbottom d-flex" style="margin-top: 8%;">
+            <button class="AddtoCartBtn"><i class="fab fa-gratipay"></i> Add to Wish List</button>
+            <button class="AddtoCartBtn"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="col-12" style="margin-top: 10%;">
+    <h2 style="text-align: left;">Product Details</h2>
+    <p style="text-align: left;">{{selectedItem[0].productDetails}}</p>
+</div>
+
+<div class="col-8" style="margin-top: 20%">
+     
+</div>

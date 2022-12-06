@@ -5,7 +5,9 @@
     position: sticky;
     top: 1px;
     z-index: 55;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
+    box-shadow: 2px 4px 9px #dedede;
+    background: #efefef;
 }
 #searchbar{
     outline: none;

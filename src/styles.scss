@@ -43,6 +43,8 @@ a{text-decoration: none;color: unset;}
     --primary: #ff5722;
     --second: white;
     --dropdown-width: 160px;
+    --menuTestColor:white;
+
   }
 .row{
   margin-left: 0px!important;
@@ -78,6 +80,16 @@ a{text-decoration: none;color: unset;}
     outline: none;
     border: none;
     border-radius: 50px;
+    width: 200px;
+    padding: 10px;
+    margin: 0 8px 15px;
+    background-color: var(--primary);
+    color: white;
+}
+.AddtoCartBtn{
+  outline: none;
+    border: none;
+    border-radius: 15px;
     width: 200px;
     padding: 10px;
     margin: 0 8px 15px;
@@ -202,5 +214,19 @@ a{text-decoration: none;color: unset;}
       bottom: 0;
       z-index: 1;
   }
+
+  ::-webkit-scrollbar {
+    width: .6em;
+  }
+   
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(20, 20, 20, 0.3);
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 50px;
+  }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

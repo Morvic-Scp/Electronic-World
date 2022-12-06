@@ -1,4 +1,6 @@
-<div class="container-fluid222">
+<app-top-menu></app-top-menu>
+
+<div class="container-fluid222" style="background-color: #eef2f4;">
     <div class="row" style="position: relative;top: -136px; z-index: 0;">
         <carousel [cellWidth]="'100%'" [dots]="true" [height]="600" [arrowsOutside]="false" [loop]="true" [autoplay]="true" [autoplayInterval]="10000" [cellsToShow]="1" [cellsToScroll]="2" [transitionDuration]="800" [transitionTimingFunction]="'ease-in-out'">
             <div class="carousel-cell">
@@ -24,7 +26,7 @@
     </div>
 </div>
 <div class="container-fluid222">
-    <div class="row justify-content-center" style="position: relative;top: -166px;">
+    <div class="row justify-content-center" style="position: relative;top: -210px;">
         <div class="col-12 row justify-content-center">
             <div class="card-sale col-lg-3 col-md-3 col-sm-8">
                <a routerLink="" class="d-flex justify-content-center wise3men">
@@ -74,8 +76,8 @@
                     <mat-tab label="Best Sellers"> 
                         <div class="container-fluid222">
                             <div class="row" style="overflow-x: hidden;">
-                                <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
-                                    <a routerLink="" class="wise3men">
+                                <div class="card-sale" style="overflow: hidden;margin:7px 10px 15px 0;" *ngFor="let sell of items">
+                                    <a routerLink="/product/{{sell.productName}}" class="wise3men">
                                         <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
                                      <div class="col-12" style="overflow: hidden;">
                                          <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
@@ -85,10 +87,10 @@
                                          <p>{{sell.description}}</p>
                                          <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
                                      </div>
-                                     <div class="col-12 text-center">
-                                        <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
-                                     </div>
                                     </a>
+                                    <div class="col-12 text-center">
+                                       <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
+                                    </div>
                                  </div>
                             </div>
                         </div>
@@ -97,7 +99,7 @@
                        <div class="container-fluid222">
                         <div class="row" style="overflow-x: hidden;">
                             <div class="card-sale col-lg-4 col-md-4 col-sm-8" style="overflow: hidden;margin: 5px 0;" *ngFor="let sell of items">
-                                <a routerLink="" class="wise3men">
+                                <a routerLink="/product/{{sell.productName}}" class="wise3men">
                                     <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
                                  <div class="col-12" style="overflow: hidden;">
                                      <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
@@ -107,10 +109,10 @@
                                      <p>{{sell.description}}</p>
                                      <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
                                  </div>
-                                 <div class="col-12 text-center">
-                                    <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
-                                 </div>
                                 </a>
+                                <div class="col-12 text-center">
+                                   <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
+                                </div>
                              </div>
                         </div>
                        </div>
