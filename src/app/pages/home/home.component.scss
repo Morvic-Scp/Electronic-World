@@ -99,6 +99,7 @@
 }
 .card-promo{
     // background-color: white;
+    position: relative;
     border-radius: 30px;
 }
 
@@ -117,4 +118,11 @@
     height: 250px;
     border-radius: 30px;
     background-size: cover;
+}
+
+.topimage{
+    // background: url('../../../assets/wave-haikei.svg');
+    object-fit: cover;
+    position: absolute;
+    top: 0;
 }
