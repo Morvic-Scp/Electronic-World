@@ -228,5 +228,20 @@ a{text-decoration: none;color: unset;}
     border-radius: 50px;
   }
 
+  .cardTag{
+    border: 1px solid var(--primary);
+    padding: 3px 8px;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 9px;
+  }
+  .profilebig{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+  }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

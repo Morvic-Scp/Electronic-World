@@ -63,34 +63,57 @@
             </div>
         </div>
            
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="background: #eef2f4;">
             <!-- Menu on the right -->
-            <div class="menuBod col-lg-3" style="margin-top: 100px;height: fit-content;padding: 55px 0%;box-shadow: 2px 3px 9px #efefefef;text-align: left;">
+            <div class="menuBod col-lg-3" style="margin-top: 100px;height: fit-content;padding: 55px 0%;box-shadow: 2px 3px 9px #efefefef;text-align: left;background-color: white;">
+               <h2 style="padding: 0 10px;margin-bottom: 4px;"><i class="fas fa-list"></i> Category</h2>
                 <div class="menuitem"  *ngFor="let menu of menuList">
-                    <a [routerLink]="menu.routePath" class="wise3men"><p style="margin: 0;"><i [ngClass]="menu.icon" style="font-size: 18px;"></i> &nbsp;{{menu.name}}</p></a>
+                    <a [routerLink]="menu.routePath" class="wise3men"><p style="margin: 0;"><i [ngClass]="menu.icon" style="font-size: 18px;color: #007bff61;"></i> &nbsp;{{menu.name}}</p></a>
                 </div>
             </div>
             <!-- Items on the left -->
-            <div class="col-9" style="margin-top: 50px;">
+
+
+            <div class="col-9 row justify-content-around" style="margin-top: 100px;">
+                <div class="col-8 card-promo">
+                    <div class="bgpromo"></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="bgpromo2"></div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center card-promo" style="flex-direction: column;background-color: white;">
+                    <img src="../../../assets/profile/avatar.png" class="profilebig" alt="">
+                    <p>User</p>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <button class="primBtn" style="width: 100px;padding: 7px 10px;"><i class="fas fa-address-card"></i> Register</button>
+                        <button class="primBtn" style="width: 100px;padding: 7px 10px;">Sign In <i class="fas fa-sign-out"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" style="margin-top: 50px;">
                 <mat-tab-group>
                     <mat-tab label="Best Sellers"> 
                         <div class="container-fluid222">
-                            <div class="row" style="overflow-x: hidden;">
+                            <div class="row justify-content-between" style="overflow-x: hidden;">
                                 <div class="card-sale" style="overflow: hidden;margin:7px 10px 15px 0;" *ngFor="let sell of items">
                                     <a routerLink="/product/{{sell.productName}}" class="wise3men">
                                         <div class="text-center"><small style="font-size: 14px;">{{sell.category}}</small></div>
                                      <div class="col-12" style="overflow: hidden;">
                                          <img [src]="sell.image" style="height: 200px;width: 200px;object-fit: cover;" alt="">
                                      </div>
-                                     <div class="col-12 text-center">
+                                     <div class="col-12 text-left" style="margin-top:5px;">
                                          <p  style="font-weight: bold;font-size: 18px;">{{sell.productName}}</p>
                                          <p>{{sell.description}}</p>
                                          <p  style="font-weight: bold;">{{sell.price| number:'.2'}}</p>
+                                         <small class="cardTag">Best Seller</small>
                                      </div>
                                     </a>
-                                    <div class="col-12 text-center">
+                                    <!-- <div class="col-12 text-center">
                                        <button class="buyBtn"><i class="fa-solid fa-cart-plus"></i> Buy Now</button>
-                                    </div>
+                                    </div> -->
                                  </div>
                             </div>
                         </div>
